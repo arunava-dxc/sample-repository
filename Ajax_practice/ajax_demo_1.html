@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="textDisplay">
+<h2>Click on the button below to change the text</h2>
+<button type="button" onclick="changeText()">Change Text</button>
+</div>
+
+<script>
+    // this function will get invoked whever user clicks the button
+function changeText() {
+    // a new XMLHttpRequest object
+  const xhttp = new XMLHttpRequest();
+  // callback method invoked automatically when received an response
+  xhttp.onload = function() {
+      // for displaying the response as a string in the specified ID or class 
+    document.getElementById("textDisplay").innerHTML = this.responseText;
+  }
+  // for opening the document takes 3 patameters
+  // 1. Request object
+  // 2. file name to open
+  // 3. async type true, and sync when false
+  xhttp.open("GET", "ajax_demoText.txt", true);
+  // send the request to the server
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
