@@ -1,0 +1,6 @@
+// Iterating a basic loop
+
+for(let i = 0; i < 5; i++){
+    // console.log() automatically adds new line
+    console.log(i);
+}
