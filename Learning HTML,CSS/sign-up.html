@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- css for the page -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- js validation for form  -->
+    <script src="js/validate.js"></script>
+</head>
+<body class="page-body">
+    <form name = "signForm" action="" onsubmit="validateForm()">
+        <div class="outer-box">
+            <h3 id="s-head">Sign-Up</h3>
+            <div class="inner-details">
+                <label for="first name">First Name</label><br>
+                <input type="text" name="fname" placeholder="enter your first name"><br><br>
+
+                <label for="last name">Last Name</label><br>
+                <input type="text" name="lname" placeholder="enter your last name"><br><br>
+
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" name="dob"><br><br>
+
+                <label for="mobile">Mobile No.</label><br>
+                <input type="text" name="mob" placeholder="enter your mobile number"><br><br>
+
+                <label for="email">Email ID</label><br>
+                <input type="mail" name="mail" placeholder="enter your email id"><br><br>
+
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="gen" aria-placeholder="choose your gender">
+                <option disabled selected value> -- Select Gender -- </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+                </select><br><br>
+
+                <label for="username">Username</label><br>
+                <input type="text" name="uname" placeholder="enter your username"><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="pass" placeholder="enter your password"><br><br>
+
+                <label for="password">Confirm Password</label><br>
+                <input type="password" name="conPass" placeholder="confirm your password"><br><br>
+
+                <input type="checkbox"> <span style="font-size: x-small;"> I agree </span> <a href="https://dxc.com/us/en/legal" class="term-con">Terms & Conitions</a><br><br>
+                <input type="submit" class="btn-signup" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
